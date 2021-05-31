@@ -14,7 +14,9 @@ jobs:
       - name: Checkmarx AST CLI Action
         uses: checkmarxDev/ast-github-action@master #Github Action version
         with:
+          project_name: WebGoat.NET
           base_uri: https://ast-master.dev.cxast.net/ #
           cx_tenant: organization
-          client_id: YairGitHubDemo
-          secret: 7cab6ee1-c44a-41a2-b13e-23d5f4bc5918
+          cx_client_id: YairGitHubDemo
+          cx_client_secret: 7cab6ee1-c44a-41a2-b13e-23d5f4bc5918
+          scan_types: sast, sca, kics
