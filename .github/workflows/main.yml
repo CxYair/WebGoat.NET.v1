@@ -15,5 +15,6 @@ jobs:
         uses: checkmarxDev/ast-github-action@master #Github Action version
         with:
           base_uri: https://ast-master.dev.cxast.net/ #
+          cx_tenant: organization
           client_id: YairGitHubDemo
           secret: 7cab6ee1-c44a-41a2-b13e-23d5f4bc5918
