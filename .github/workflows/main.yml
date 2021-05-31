@@ -17,6 +17,6 @@ jobs:
           project_name: WebGoat.NET
           base_uri: https://ast-master.dev.cxast.net/ #
           cx_tenant: organization
-          cx_client_id: YairGitHubDemo
-          cx_client_secret: 7cab6ee1-c44a-41a2-b13e-23d5f4bc5918
+          cx_client_id: ${{ secrets.CLIENT_ID }}
+          cx_client_secret: ${{ secrets.SECRET }}
           scan_types: sast, sca, kics
